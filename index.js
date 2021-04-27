@@ -1,15 +1,14 @@
 const tmi = require('tmi.js');
 const say = require('say');
 
-const prefix = '!';
-const {oauth} = require('./password.js');
+const {prefix} = require('./config.json');
+const {oauth} = require('./secret.json');
 
 const config = {
 	options: {
 		debug: false
 	},
 	connection: {
-		cluster: "aws",
 		reconnect: true
 	},
 	identity: {
@@ -41,9 +40,8 @@ client.on("message", function (channel, userstate, message, self) {
 		say.speak(`${userstate.username} said ${tts}`);
 	}
 	
-	if(message.toLowerCase() === `${prefix}vanish`) {
-		client.timeout(channel, userstate.username, 1, "vanish").catch();
-	}
+	if(message.toLowerCase() === `${prefix}vanish`)
+		client.timeout(channel, userstate.username, 1, "vanish").catch(); 
 
 	console.log(`[${channel} | ${userstate.username}] ${message}`);
 });
