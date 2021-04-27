@@ -2,6 +2,7 @@ var tmi = require('tmi.js');
 var say = require('say');
 
 const prefix = '!';
+const {oauth} = require('./password.js');
 
 var config = {
 	options: {
@@ -13,7 +14,7 @@ var config = {
 	},
 	identity: {
 		username: "stylisbot",
-		password: "noidontthinkso"
+		password: oauth
 	},
 	channels: ["stylislol"]
 };
@@ -21,7 +22,7 @@ var config = {
 var client = new tmi.client(config);
 client.connect(); 
 
-client.on("chat", function (channel, userstate, message, self) {
+client.on("message", function (channel, userstate, message, self) {
 	if(self) return;
 
 	if(message.toLowerCase().includes(`${prefix}commands`))
