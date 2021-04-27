@@ -22,6 +22,14 @@ var config = {
 var client = new tmi.client(config);
 client.connect(); 
 
+client.on("connected", (address, port) => {
+    console.log(`connected to ${address} on port ${port}`);
+});
+
+client.on("hosted", (channel, username, viewers, autohost) => {
+    if(autohost = false) say.speak(`${channel} was hosted by ${username} with ${viewers} viewers.`);
+});
+
 client.on("message", function (channel, userstate, message, self) {
 	if(self) return;
 
