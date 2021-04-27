@@ -9,9 +9,9 @@ Hosted on my local machine with nodejs.
 Source code is available for all here! Please contribute, I have no idea what I'm doing!
 
 ## commands
-**!about:** links to my about page.
+**!about:** links to [my about page](https://tinyurl.com/39yyts7b).
 
-**!commands:** links you to here. hi!
+**!commands:** links you to [a list of commands](https://tinyurl.com/2r3wzxy2).
 
 **!emote:** my favourite emote at the time!
 
