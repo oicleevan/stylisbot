@@ -30,7 +30,7 @@ client.on("message", function (channel, userstate, message, self) {
 	if(self) return;
 
 	if(message.toLowerCase().includes(`${prefix}commands`))
-		client.say(channel, "a list of commands are available at https://tinyurl.com/4sfcwhcd");
+		client.say(channel, "a list of commands are available at https://tinyurl.com/2r3wzxy2");
 		
 	if(message.toLowerCase().includes(`${prefix}say`)) {
 		var tts = message.replace("!say ", "");
