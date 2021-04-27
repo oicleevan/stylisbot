@@ -27,12 +27,16 @@ client.on("connected", (address, port) => {
 });
 
 client.on("message", function (channel, userstate, message, self) {
-	if(self) return;
+	if(message.toLowerCase() === `${prefix}about`)
+		client.say(channel, "want to know more about the project? read at https://tinyurl.com/39yyts7b")
 
-	if(message.toLowerCase().includes(`${prefix}commands`))
+	if(message.toLowerCase() === `${prefix}commands`)
 		client.say(channel, "a list of commands are available at https://tinyurl.com/2r3wzxy2");
 		
-	if(message.toLowerCase().includes(`${prefix}say`)) {
+	if(message.toLowerCase() === `${prefix}emote`)
+		client.say(channel, "my favourite emote right now is... SlimHardo !");
+
+	if(message.toLowerCase() === `${prefix}say`) {
 		var tts = message.replace("!say ", "");
 		say.speak(`${userstate.username} said ${tts}`);
 	}
