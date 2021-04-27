@@ -41,5 +41,9 @@ client.on("message", function (channel, userstate, message, self) {
 		say.speak(`${userstate.username} said ${tts}`);
 	}
 	
+	if(message.toLowerCase() === `${prefix}vanish`) {
+		client.timeout(channel, userstate.username, 1, "vanish").catch();
+	}
+
 	console.log(`[${channel} | ${userstate.username}] ${message}`);
 });

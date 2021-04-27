@@ -17,6 +17,8 @@ Source code is available for all here! Please contribute, I have no idea what I'
 
 **!say:** tts your message, so all stream can hear ( PepeLaugh )
 
+**!vanish:** time yourself out for 1 second
+
 ## credit
 
 **[tmi.js](https://github.com/tmijs/tmi.js)** - library used for all the twitch interfacing
