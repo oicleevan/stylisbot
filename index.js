@@ -47,7 +47,7 @@ client.on("message", function (channel, userstate, message, self) {
 
 	// because tts includes more than just the message, i had to exclude it from the switch
 	if(message.toLowerCase().includes(`${prefix}say`)) {
-		var tts = message.replace("!say ", "");
+		var tts = message.replace(`${prefix}say `, "");
 		say.speak(`${userstate.username} said ${tts}`);
 	}
 
