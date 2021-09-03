@@ -7,9 +7,7 @@
 const tmi = require('tmi.js');
 const say = require('say');
 
-const {prefix, favourite_emote, username} = require('./config.json');
-const {oauth} = require('./secret.json'); // secret password. hidden from git ;)
-
+const {prefix, favourite_emote, username, oauth} = require('./config.json');
 const config = {
 	options: {
 		debug: false
