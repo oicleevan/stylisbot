@@ -1,7 +1,13 @@
+/*
+	index.js
+	Main file for my twitch bot, stylisbot
+	-- oicleevan
+*/
+
 const tmi = require('tmi.js');
 const say = require('say');
 
-const {prefix, favourite_emote } = require('./config.json');
+const {prefix, favourite_emote, username} = require('./config.json');
 const {oauth} = require('./secret.json'); // secret password. hidden from git ;)
 
 const config = {
@@ -12,8 +18,8 @@ const config = {
 		reconnect: true
 	},
 	identity: {
-		username: "stylisbot",
-		password: oauth
+		username: username,
+		password: oauth // your login. for purposes of safety on my end, currently blank. 
 	},
 	channels: ["stylislol"] // channels that this bot is enabled in.
 };

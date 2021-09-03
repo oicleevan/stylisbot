@@ -10,9 +10,9 @@ Source code is available for all here! Please contribute, I have no idea what I'
 
 ## setup
 
-Requires nodejs.
+Requires nodejs, and the `tmi.js` and `say` modules.
 
-Requires the `tmi.js` and `say` modules.
+To use with any account, change the `username` and `oauth` json objects to those of the account you want to log in with.
 
 When they're installed, `node .` in the directory.
 
