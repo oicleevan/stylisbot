@@ -10,7 +10,8 @@ Source code is available for all here! Please contribute, I have no idea what I'
 
 ## setup
 
-Requires nodejs, and the `tmi.js` and `say` modules.
+Dependencies - nodejs, and the `tmi.js`, `process`, and `say` modules.
+    npm install tmi.js process say
 
 To use with any account, change the `username` json object to that of the account you want to log in with.
 
