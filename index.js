@@ -15,7 +15,7 @@ const config = {
 		username: "stylisbot",
 		password: oauth
 	},
-	channels: ["stylislol"]
+	channels: ["stylislol"] // channels that this bot is enabled in.
 };
 
 const client = new tmi.client(config);

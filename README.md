@@ -8,16 +8,13 @@ Hosted on my local machine with nodejs.
 
 Source code is available for all here! Please contribute, I have no idea what I'm doing!
 
-## commands
-**!about:** links to [my about page](https://tinyurl.com/39yyts7b).
+## setup
 
-**!commands:** links you to [a list of commands](https://tinyurl.com/2r3wzxy2).
+Requires nodejs.
 
-**!emote:** my favourite emote at the time!
+Requires the `tmi.js` and `say` modules.
 
-**!say:** tts your message, so all stream can hear ( PepeLaugh )
-
-**!vanish:** time yourself out for 1 second
+When they're installed, `node .` in the directory.
 
 ## credit
 
