@@ -6,8 +6,12 @@
 
 const tmi = require('tmi.js');
 const say = require('say');
+const process = require('process');
 
-const {prefix, favourite_emote, username, oauth} = require('./config.json');
+const {prefix, favourite_emote, username} = require('./config.json');
+
+const oauth = process.argv[2];
+
 const config = {
 	options: {
 		debug: false
@@ -34,10 +38,10 @@ client.on("message", function (channel, userstate, message, self) {
 	// i had a bunch of if statements, but i think this is more elegant.
 	switch(message.toLowerCase()) {
 		case `${prefix}about`:
-			client.say(channel, "want to know more about the project? read at https://tinyurl.com/39yyts7b");
+			client.say(channel, "want to know more about the project? read at https://oicleevan.github.io/stylisbot/about.html");
 			break;
 		case `${prefix}commands`:
-			client.say(channel, "a list of commands are available at https://tinyurl.com/2r3wzxy2");
+			client.say(channel, "a list of commands are available at https://oicleevan.github.io/stylisbot/commands.html");
 			break;
 		case `${prefix}emote`:
 			client.say(channel, `my favourite emote right now is...  ${favourite_emote} !`);
