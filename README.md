@@ -15,7 +15,7 @@ Dependencies - nodejs, and the `tmi.js`, `process`, and `say` modules.
 
 To use with any account, change the `username` json object to that of the account you want to log in with.
 
-**For the sake of security, you must include the oauth in the command line arguments to log in.
+**For the sake of security, you must include the oauth in the command line arguments to log in.**
 
 When they're installed, `node . {account oauth}` in the root directory.
 
