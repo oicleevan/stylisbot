@@ -1,6 +1,6 @@
 # documentation
 
-This is now hosted on my website as well, check it out [here](https://oicleevan.github.io/stylisbot/home.html)!
+This is now hosted on my website, check it out [here](https://oicleevan.github.io/stylisbot/home.html)!
 
 ## commands
 **!about:** links to [my about page](https://tinyurl.com/39yyts7b).

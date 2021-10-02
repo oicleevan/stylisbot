@@ -3,5 +3,8 @@
     "process": "^0.11.10",
     "say": "^0.16.0",
     "tmi.js": "^1.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.2"
   }
 }
